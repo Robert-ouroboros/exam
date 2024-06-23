@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Моя Компания</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="login.html">Логин</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin">
+                <section class="hero">
+                    <div class="reg__hero">
+                        <!-- Форма для регистрации -->
+                    <form action="php/reg.php" method="POST" class="sign-up-form">
+                        <h2 class="title">Регистрация</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="name" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="pass" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Email" name="email" required>
+                        </div>
+                        <input type="submit" value="Зарегистрироваться" class="btn">
+                        <div class="register-tittle">
+                            <h3>Зарегистрированы?</h3>
+                            <p>Имеете уже Зарегистрированый аккаунт? Войдите в свой аккаунт чтобы получить все функции сайта</p>
+                    </div>
+                    </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Моя Компания. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

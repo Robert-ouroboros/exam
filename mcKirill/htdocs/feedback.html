@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Моя Компания</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="login.html">Логин</a></li>
+                    <li><a href="reg.html">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin">
+                <section class="hero">
+                        <!-- Форма обратной связи -->
+                        <form action="php/feedback.php" method="POST" class="feedback-form">
+                            <h2 class="title">Обратная связь</h2>
+                            <div class="feedback-tittle">
+                                <h3>Вы можете отправить нам сообщение!</h3>
+                                <p>Если у вас есть какие-либо пожелания, советы или вопросы по поводу нашего сайта вы можете
+                                    <br>оставить отзыв или написать нам, мы обязательно ответим вам на почту!
+                                </p>
+                            </div>
+                            <div class="feedback-input">
+                                <div class="input-field">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" placeholder="Username" name="name" required>
+                                </div>
+                                <div class="input-field">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="email" placeholder="Email" name="email" required>
+                                </div>
+                                <div class="input-field">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" placeholder="Message" name="message" required>
+                                </div>
+                                <input type="submit" value="Отправить сообщение!" class="btn solid">
+                            </div>
+                        </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Моя Компания. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
